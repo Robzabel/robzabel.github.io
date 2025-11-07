@@ -3,7 +3,7 @@ layout: post
 title: Who are BlackNevas Ransomware Group?
 ---
 
-
+![_config.yml]({{ site.baseurl }}/images/BNransomware.jpg)
 
 ## BlackNevas Background
 
