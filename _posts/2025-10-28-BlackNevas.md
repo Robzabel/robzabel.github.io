@@ -17,15 +17,16 @@ BlackNevas’ DLS appears to be still under construction. With the lack of conta
 
 ![_config.yml]({{ site.baseurl }}/images/contactPage.png)
 
-The **Publications** page looks like it has had the most attention of the developers, displaying a tile for each victim specifying the company name and website along with the reported annual revenue and statistics of the data that was stolen. Each tile has an AI generated image that appears to be the BlackNevas group sat around a table on laptops, with the victim’s company name in the background. This image gives way to a carousel of sliding thumbnail pictures taken from the stolen data including publicly identifiable information (PII) of staff or customers, invoices, trade secrets or database dumps.
+The **Publications** page looks like it has had the most attention from the developers, displaying a tile for each victim specifying the company name and website along with the reported annual revenue and statistics of the data that was stolen. Each tile has an AI generated image that appears to be the BlackNevas group sat around a table on laptops, with the victim’s company name in the background. This image gives way to a carousel of sliding thumbnail pictures taken from the stolen data including publicly identifiable information (PII) of staff or customers, invoices, trade secrets or database dumps.
 
 ![_config.yml]({{ site.baseurl }}/images/PublicationsPage.png)
 
-The **Statistics** and **Files** pages are of equal low-quality design and build. The statistics page simply lists metrics such as total victim count and total leaked data size. On the files page, there are no actual files available to be viewed or downloaded, apart from one document under the heading of “test55” which contains a file with the name “Новый текстовый документ.txt” which is Russian for “New Text Document.txt”.
+The **Statistics** and **Files** pages are of equal low-quality design and build. The statistics page simply lists metrics such as total victim count and total leaked data size. On the files page, there are no actual files available to be viewed or downloaded, apart from one document under the heading of “test55” containing a file named “Новый текстовый документ.txt” which is Russian for “New Text Document.txt”.
 
 ---
 
 ## Diamond Model
+The diamond model is used by threat intelligence analysts to provide guidance when profiling a threat actor. The model focuses on the relationships and characteristics of four key elements: the adversary, their capabilities, the infrastructure they use and the target victims. By examining these elements, insight can be gained into motivations and allows understanding of the targets and scope of the campaign. Each element is represented by a point of the diamond with the who, what and how depicted in the middle.
 
 ![_config.yml]({{ site.baseurl }}/images/DiamondModel.jpg)
 
@@ -49,11 +50,11 @@ As with most ransomware attacks, BlackNevas gain initial access into a target en
 
 The BlackNevas ransomware is written for different operating systems including Windows, Linux and ESXi, it also employs several techniques for obfuscation, stealth, replication and persistence. Although sophisticated, the binary files do not utilise anti-sandbox or anti-debugging evasion techniques which has allowed it to be studied. SentinelOne have done an in-depth reversal of all binary types, in which they discovered the following key characteristics:
 
-* **A double encryption mechanism:** Victim files are encrypted with multiple layers of the AES algorithm, and the keys are then further encrypted with and RSA algorithm.
+* **A double encryption mechanism:** Victim files are encrypted with multiple layers of the AES algorithm, those keys are then further encrypted with and RSA algorithm.
 * **File extensions:** Encrypted files are given the extension of “.-encrypted” or “.ENCRYPTED”
 * **Persistence:** Registry run keys are modified to run the binary on start up.
-* **Propagation:** The malware uses SMB from enumeration and spreading capabilities.
-* **The ransom note:** A file called “how\_to\_decrypt.txt” containing the ransom note is written to every directory containing an encrypted file.
+* **Propagation:** The malware uses SMB from enumeration and repliucation capabilities.
+* **The ransom note:** The ransom note, called “how\_to\_decrypt.txt”, is written to every directory containing an encrypted file.
 
 
 
@@ -65,7 +66,7 @@ The BlackNevas ransomware is written for different operating systems including W
 
 The only publicly available examples of the ransom note (at the time of writing) were written before BlackNevas had their own Onion site. The note informs victims that their files have been encrypted and that they have 7 days to pay a ransom before the decryption keys are deleted and their information is auctioned off. This is then followed by a warning about tampering with files in an attempt to decrypt them and some steps to download the Tor browser.
 
-An interesting aspect of the note is that, to communicate with BlackNevas, the victim needs to email a @usa.com email address, created with the specified computer ID. Since this note is hard coded, an email addresses must be created per victim and updated in the note before the binary is compiled.
+An interesting aspect of the note is that, to communicate with BlackNevas, the victim needs to email a specific email address ending in "@usa.com". Since this note is hard coded, an email addresses must be created per victim and updated in the ransom note before the binary is compiled.
 
 ---
 
@@ -73,8 +74,7 @@ An interesting aspect of the note is that, to communicate with BlackNevas, the v
 
 Although being active for over a year, still not much is known about the group BlackNevas. They have stayed out of the mainstream and avoided the public eye while also tallying up a significant number of victims. It appears that the group may have started out as an affiliate of the more established ransomware gangs which would explain why the ransom note pointed victims to the Onion sites of KillSec, Hunters International, DragonForce, etc. But now it appears that they are running the whole process from initial access to negotiation themselves.
 
-Indicators such as the unfinished website, low tech communication methods and using ransomware derived from code written by other authors shows that the group is still evolving and finding its place in the ransomware ecosystem. The Cyrillic named file, under the directory of test on their DLS, could point to the group being of Russian origin; however, there is no concrete evidence that is where they are based.
-With a busy end to 2025, BlackNevas look set to carry on operations into the new year at pace and they will be a name to watch out for in future.
+Indicators such as the unfinished website, low tech communication methods and using ransomware derived from code written by other authors shows that the group is still evolving and finding its place in the ransomware ecosystem. The Cyrillic named file in the test folder on the files page, could point to the group being of Russian origin; however, there is no concrete evidence that is where they are based. With a busy end to 2025, BlackNevas look set to carry on operations into the new year at pace and they will be a name to watch out for in future.
 
 
 
