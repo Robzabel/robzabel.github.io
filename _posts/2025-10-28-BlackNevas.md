@@ -15,11 +15,11 @@ BlackNevas, also known by the name of “Trial Recovery”, are a ransomware and
 
 BlackNevas’ DLS appears to be still under construction. With the lack of contact details page, brand logo and relevant favicon, the onion site comes across as unfinished.
 
-Insert image of contact page
+![_config.yml]({{ site.baseurl }}/images/contactPage.png)
 
 The **Publications** page looks like it has had the most attention of the developers, displaying a tile for each victim specifying the company name and website along with the reported annual revenue and statistics of the data that was stolen. Each tile has an AI generated image that appears to be the BlackNevas group sat around a table on laptops, with the victim’s company name in the background. This image gives way to a carousel of sliding thumbnail pictures taken from the stolen data including publicly identifiable information (PII) of staff or customers, invoices, trade secrets or database dumps.
 
-Insert Image of publications page
+![_config.yml]({{ site.baseurl }}/images/PublicationsPage.png)
 
 The **Statistics** and **Files** pages are of equal low-quality design and build. The statistics page simply lists metrics such as total victim count and total leaked data size. On the files page, there are no actual files available to be viewed or downloaded, apart from one document under the heading of “test55” which contains a file with the name “Новый текстовый документ.txt” which is Russian for “New Text Document.txt”.
 
@@ -27,7 +27,7 @@ The **Statistics** and **Files** pages are of equal low-quality design and build
 
 ## Diamond Model
 
-Insert Diamond model
+![_config.yml]({{ site.baseurl }}/images/DiamondModel.jpg)
 
 
 
@@ -61,7 +61,7 @@ The BlackNevas ransomware is written for different operating systems including W
 
 ## Extortion
 
-Insert image of ransom note
+![_config.yml]({{ site.baseurl }}/images/RansomNote.png)
 
 The only publicly available examples of the ransom note (at the time of writing) were written before BlackNevas had their own Onion site. The note informs victims that their files have been encrypted and that they have 7 days to pay a ransom before the decryption keys are deleted and their information is auctioned off. This is then followed by a warning about tampering with files in an attempt to decrypt them and some steps to download the Tor browser.
 
