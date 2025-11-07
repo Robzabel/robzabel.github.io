@@ -25,5 +25,7 @@ Cyber Threat Intelligence Engineer with hands-on experience in **threat research
 - **Cloud & Infrastructure:** AWS, Docker, Linux, CI/CD pipelines  
 - **Automation & Data Handling:** REST APIs, JSON, Pandas, custom enrichment scripts  
 - **Frameworks & Standards:** MITRE ATT&CK, STIX/TAXII, Cyber Kill Chain  
+- **Network Security:** Cisco Certified Network Specialist Enterprise Core and CCNA
+- **Digital Forensics:** Certified Difital Forensics Professional from INE e-learn security
 
 
