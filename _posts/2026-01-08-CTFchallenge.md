@@ -7,12 +7,12 @@ title: CTF Reversing Engineering Challenge
 
 ## Cyberpsychosis Challenge from Hack The Box 
 
-I have been really enjoying the reverse engineering challenges from HTB and I recently completed one that I found very interesting I will not post the name of the challenge or the flag to keep within HTB rules, but I wanted to do a write up as it involved a Linux root kit which is something I have not previously analysed.
+I have been really enjoying the reverse engineering challenges from HTB and I recently completed one that I found very interesting. I will not post the name of the challenge or the flag to keep within HTB rules, but I wanted to do a write up as it involved a Linux root kit which is something I have not previously analysed.
 
 ### Challenge Scenario
 Malicious actors have infiltrated our systems and we believe they've implanted a custom rootkit. Can you disarm the rootkit and find the hidden data?
 
-#### File Command
+### File Command
 I always start by running the file command on a binary to get as much infromation as possible about what I am looking at:
 ![_config.yml]({{ site.baseurl }}/images/filecommand.png)
 diamorphine.ko: ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), BuildID[sha1]=e6a635e5bd8219ae93d2bc26574fff42dc4e1105, with debug_info, not stripped
@@ -33,7 +33,7 @@ to match the binary with its corresponding debug symbols later.
 this info to save space, but it makes the binary much harder to debug or analyse
 
 ### Reconnaissance 
-Since this is not an executable file, it wont run in my environment. Therefore, I will spawn the challenge docker image and connect to the server through net cat, using the provided IP address and port number.
+Since this is not an executable file, it would not run in my environment. Therefore, I needed spawn the challenge docker image and connect to the server through net cat, using the provided IP address and port number.
 
 Once on the Docker instance, I ran a few commands to search around and see if there was anything interesting to find. After a while of looking through directories, there was nothing jumping out at me so I decided to Google the Diamorphine root kit. I found that is is a GitHub project by m0nad - [Diamorphine RootKit](https://github.com/m0nad/Diamorphine/tree/master)
 
