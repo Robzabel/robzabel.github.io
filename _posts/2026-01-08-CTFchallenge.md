@@ -35,7 +35,8 @@ this info to save space, but it makes the binary much harder to debug or analyse
 ### Reconnaissance 
 Since this is not an executable file, it wont run in my environment. Therefore, I will spawn the challenge docker image and connect to the server through net cat, using the provided IP address and port number.
 
-Once on the Docker instance, I ran a few commands to search around and see if there was anything interesting to find. After a while of looking through directories, there was nothing jumping out at me so I decided to Google the Diamorphine root kit. I found that is is a GitHub project by m0nad - [text](https://github.com/m0nad/Diamorphine/tree/master)
+Once on the Docker instance, I ran a few commands to search around and see if there was anything interesting to find. After a while of looking through directories, there was nothing jumping out at me so I decided to Google the Diamorphine root kit. I found that is is a GitHub project by m0nad - [Diamorphine RootKit](https://github.com/m0nad/Diamorphine/tree/master)
+
 As the README explains “*the module starts invisible, to remove you need to make it visible”.*  The functionality of the rootkit is utilised by entering process kill commands with the following signals:
 
 - Hide/unhide any process by sending a signal 31;
@@ -46,19 +47,29 @@ As the README explains “*the module starts invisible, to remove you need to ma
 On the docker image I tested the commands with varying success:
 
 *kill -31 5*, hid the process with the PID of 5
+
 *kill -64 0*, elvated me to a root shell
+
 *kill -63 0*, caused kernel panic and crashed the system
 
 I looked at the source code of the rootkit on github. In the directory, there is a header file and a C source file. In the header file I found where the variables are defined for SIGINVIS, SIGSUPER, SIGMODINVIS:
+
 ![_config.yml]({{ site.baseurl }}/images/headerFile.png)
+
 By searching the C code file for the signal number variable names, I was able to find that they are referenced in the hacked_kill function:
+
 ![_config.yml]({{ site.baseurl }}/images/sourceFile.png)
+
 I opened the kernel module file up in Ghidra and located the hacked_kill function, where the comparisons (CMP) instructions can be seen in the assembly code:
+
 ![_config.yml]({{ site.baseurl }}/images/Ghidra.png)
+
 Using Ghidra’s unit converter function, I changed the hex notation to decimal and found that SIGINVIS = 31, SIGSUPER = 64, but the number required for SIGMODINVIS is actually 46.
 
 ### Getting the Flag
 
 I logged back onto the box and elevated to a root shell (changing the prompt from $ to #), made the root kit visible, then entered the uninstall command from the README.
+
 ![_config.yml]({{ site.baseurl }}/images/finalConsole.png)
-Now that the Rootkit has been stopped all files that were hidden using the MAGIC_PREFIX are now visible, so now its a case of checking the directories for a flag.txt file. I started listing the directories in the root until I got to /opt in which I found a directory called psychosis, in here was the the flag.
+
+Now that the Rootkit has been stopped, all files that were hidden using the MAGIC_PREFIX are now visible. I started listing the directories in the root until I got to /opt in which I found a directory called psychosis, in here was the the flag.
