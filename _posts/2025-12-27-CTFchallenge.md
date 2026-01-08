@@ -3,9 +3,9 @@ layout: post
 title: CTF Reversing Engineering Challenge
 ---
 
-![_config.yml]({{ site.baseurl }}/images/Owasptitle.png)
+![_config.yml]({{ site.baseurl }}/images/diaTitle.png)
 
-## Reverse Engineering Challenge from Hack The Box 
+## Cyberpsychosis Challenge from Hack The Box 
 
 I have been really enjoying the reverse engineering challenges from HTB. I recently completed one that I found very interesting I will not post the name of the challenge or the flag to keep within HTB rules, but I wanted to do a write up as it involved a Linux root kit which is something I have not previously analysed.
 
