@@ -3,7 +3,7 @@ layout: post
 title: CTF Reversing Engineering Challenge
 ---
 
-![_config.yml]({{ site.baseurl }}/images/diaTitle.png)
+![_config.yml]({{ site.baseurl }}/images/diaTitle.jpg)
 
 ## Cyberpsychosis Challenge from Hack The Box 
 
