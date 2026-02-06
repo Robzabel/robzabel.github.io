@@ -20,9 +20,9 @@ Cyber Threat Intelligence Engineer with hands-on experience in **threat research
 
 ### **Skills & Tools**
 - **Languages & Scripting:** Python, Bash, YARA, Sigma  
-- **Threat Intelligence Platforms:** OpenCTI, MISP, KASM Workspaces  
-- **Security Tools:** VirusTotal, Recorded Future, Shodan, Any.Run, SOC Radar
-- **Cloud & Infrastructure:** AWS, Docker, Linux, CI/CD pipelines  
+- **Threat Intelligence Platforms:** OpenCTI, MISP, Recorded Future 
+- **Security Tools:** VirusTotal, KASM Workspaces , Shodan, Any.Run, SOC Radar
+- **Cloud & Infrastructure:** AWS, Azure, Docker, Linux, CI/CD pipelines  
 - **Automation & Data Handling:** REST APIs, JSON, Pandas, custom enrichment scripts  
 - **Frameworks & Standards:** MITRE ATT&CK, STIX/TAXII, Cyber Kill Chain  
 - **Network Security:** Cisco Certified Network Specialist Enterprise Core and CCNA
