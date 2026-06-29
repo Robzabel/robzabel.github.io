@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FortiBleed: Why This Campaign Is Far More Than a Simple Credentials Leak
+title: FortiBleed - Why This Campaign Is Far More Than a Simple Credentials Leak
 ---
 
 ![_config.yml]({{ site.baseurl }}/images/Title-fortibleed.jpg)
@@ -18,7 +18,6 @@ Unlike incidents driven by a single zero-day vulnerability, FortiBleed appears t
 What makes this particularly dangerous is that valid credentials can bypass many traditional security controls. Once an attacker has legitimate administrator credentials, they no longer need to exploit software vulnerabilities, they can simply log in. This makes malicious activity significantly more difficult to detect and allows attackers to move quickly from internet-facing devices into the wider network.
 
 The campaign also reinforces an important lesson for defenders: applying security patches alone is not always enough. Fortinet has stated that FortiBleed is not linked to a newly disclosed vulnerability, but instead appears to stem from previously compromised credentials combined with sustained brute-force activity against exposed devices. That distinction is significant because it changes the defensive response. Keeping appliances fully up to date remains essential, but organisations should also assume that administrative credentials may already have been compromised and respond accordingly.
-
 
 ### Mitigation
 For organisations that rely on FortiGate appliances, the priority should be to rotate all administrative credentials, enable multi-factor authentication wherever possible, review privileged accounts for unnecessary access, and audit firewall configurations for any signs of unauthorised changes. Security teams should also examine historical VPN and administrative login activity for suspicious behaviour and ensure that management interfaces are not unnecessarily exposed to the internet.

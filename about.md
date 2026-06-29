@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ## 👨‍💻 **Professional Summary**
-Cyber Security Engineer with hands-on experience across **Threat Intelligence, SOC Operations, and Security Automation**. Skilled in **threat research, malware analysis, SIEM/EDR engineering, and cloud-based infrastructure**, combining **OSINT** and **closed-source intelligence** to produce actionable insights, automate workflows, and strengthen proactive defence capabilities.
+Cyber Security Engineer with hands-on experience across **Threat Intelligence, SOC Operations**, and **Security Automation**. Skilled in **threat research, malware analysis, SIEM/EDR engineering, and cloud-based infrastructure**, combining **OSINT** and **closed-source intelligence** to produce actionable insights, automate workflows, and strengthen proactive defence capabilities.
 
 ---
 
@@ -20,56 +20,13 @@ Cyber Security Engineer with hands-on experience across **Threat Intelligence, S
 
 ---
 
-### Security Engineering
-- SOC Operations 
-- SIEM Administration 
-- EDR Deployment & Configuration 
-- Detection Engineering
-- Incident Response 
-
-### SOAR & Automation
-- Tines 
-- Cisco SecureX 
-- REST APIs 
-- Custom Enrichment Scripts 
-
-### Threat Intelligence Platforms 
-- OpenCTI 
-- MISP 
-- Recorded Future 
-
-### Threat Research & Analysis 
-- OSINT 
-- Malware Analysis 
-- IOC Analysis 
-- MITRE ATT&CK 
-- Cyber Kill Chain 
-- STIX/TAXII 
-
-### Security Tools 
-- VirusTotal 
-- Any.Run 
-- SOC Radar 
-- Shodan 
-- KASM Workspaces 
-
-### Languages & Scripting 
-- Python 
-- Bash 
-- YARA 
-- Sigma 
-
-### Cloud & Infrastructure 
-- AWS 
-- Azure 
-- Docker 
-- Linux 
-- CI/CD Pipelines 
-
-### Networking 
-- Cisco Certified Network Specialist Enterprise Core (CCNP ENCOR) 
-- CCNA 
-- Firewall configuration
-
-### Digital Forensics 
-- INE eLearnSecurity Certified Digital Forensics Professional (eCDFP)
+### **Skills & Tools**
+- **SIEM** Microsoft Sentinel, Level Blue Alien Vault, CrowdStrike Next-Gen
+- **EDR/XDR** SentinelOne, CrowdStrike, Defender, Cisco Secure Endpoint, Sophos
+- **Languages & Scripting:** Python, Bash, YARA, Sigma  
+- **Threat Intelligence Platforms:** OpenCTI, MISP, Recorded Future 
+- **Cloud & Infrastructure:** AWS, Azure, Docker, Linux, CI/CD pipelines  
+- **Automation & Data Handling:** REST APIs, JSON, Pandas, custom enrichment scripts  
+- **Frameworks & Standards:** MITRE ATT&CK, STIX/TAXII, Cyber Kill Chain  
+- **Network Security:** Cisco Certified Network Specialist Enterprise Core and CCNA
+- **Digital Forensics:** Certified Difital Forensics Professional from INE e-learn security
