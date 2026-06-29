@@ -3,7 +3,7 @@ layout: post
 title: FortiBleed - Why This Campaign Is Far More Than a Simple Credentials Leak
 ---
 
-![_config.yml]({{ site.baseurl }}/images/Title-fortibleed.jpg)
+![_config.yml]({{ site.baseurl }}/images/Title-fortibleed.png)
 
 ## Discovery   
 
